@@ -1,6 +1,10 @@
 # ELK-Stack-Project
 University of RIchmond Cybersecurity Bootcamp ELK stack Project
+
 https://github.com/ninjama1127/ELK-Stack-Project/blob/main/Project1_ELK-Stack-Diagram.jpg
+
+![Project1_ELK-Stack-Diagram](https://user-images.githubusercontent.com/86531330/134781303-d9e7351e-6be3-4662-9238-1102816d468f.jpg)
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
