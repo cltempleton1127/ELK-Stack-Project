@@ -1,8 +1,6 @@
 # ELK-Stack-Project
 University of RIchmond Cybersecurity Bootcamp ELK stack Project
 
-https://github.com/ninjama1127/ELK-Stack-Project/blob/main/Project1_ELK-Stack-Diagram.jpg
-
 ![Project1_ELK-Stack-Diagram](https://user-images.githubusercontent.com/86531330/134781303-d9e7351e-6be3-4662-9238-1102816d468f.jpg)
 
 
