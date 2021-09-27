@@ -37,7 +37,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Web1     | Web VM    | 10.0.0.6   | Linux            |
 | Web2     | Web VM    | 10.0.0.7   | Linux            |
 | Web3     | Web VM    | 10.0.0.9   | Linux            |
-| ELK      | ELK Stack | 10.2.0.4   | Linux            |
+| ELK      | ELK Stack | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
@@ -75,11 +75,20 @@ The following screenshot displays the result of running `docker ps` after succes
 This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
 
-We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+We have installed the following Beats on these machines: 
+..* **Filebeat
+..* Metricbeat**
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+
+**Filebeat can be described as a lightweight shipper for forwarding and centralizing log data. It helps you keep the simple things simple by offering a lightweight way to forward and centralize logs and files. On the other hand, Metricbeat is detailed as a Lightweight Shipper for Metrics. Metricbeat collects metrics from your systems and services. From CPU to memory, Essentially, it is a lightweight way to send system and service statistics like CPU usage and memory.  Filebeat and Metricbeat are primarily classified as "Log Management" and "Monitoring" tools respectively.**
+
+**Examples of data collected from Filebeat would be log events that you specify, such as audit logs, deprecation logs, GC logs ("Garbage Collection" logs- a highly important tool for revealing potential improvements), server logs, and slow logs.**
+
+**Examples of data collected from Metricbeat would be CPU or memory or data related to services running on the server. It can also be used to monitor other beats and ELK stack itself.**
+
+
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
