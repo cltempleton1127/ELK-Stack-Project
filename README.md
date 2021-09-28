@@ -4,7 +4,7 @@ University of RIchmond Cybersecurity Bootcamp ELK stack Project
 ![Project1_ELK-Stack-Diagram (2)](https://user-images.githubusercontent.com/86531330/135138057-96071aa4-23d6-4e23-bf85-5014dcf51638.jpg)
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
 
   - _TODO: Enter the playbook file._
 
@@ -38,8 +38,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function  | IP Address | Operating System |
 |----------|---------- |------------|------------------|
 | Jump Box | Gateway   | 10.0.0.4   | Linux            |
-| Web1     | Web VM    | 10.0.0.6   | Linux            |
-| Web2     | Web VM    | 10.0.0.7   | Linux            |
+| Web1     | Web VM    | 10.0.0.5   | Linux            |
+| Web2     | Web VM    | 10.0.0.6   | Linux            |
 | Web3     | Web VM    | 10.0.0.9   | Linux            |
 | ELK      | ELK Stack | 10.1.0.4   | Linux            |
 
