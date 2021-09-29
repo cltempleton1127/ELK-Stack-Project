@@ -8,6 +8,7 @@ I created an ELK stack that allows the automatation of monitoring the performanc
 
 Scalability and Elasticity
 Efficiency of Resources
+Ideal for Team Distribution and Collaboration Efforts
 Increased Security
 App Isolation
 More information about Cloud Domain, Containers, and the Security Benefits.
@@ -38,8 +39,9 @@ The configuration details of each machine may be found below.
 
 Name	Function	IP Address	Operating System
 Jump Box	Gateway	10.0.0.4	Linux
-Web-1	Server	10.0.0.5	Linux
-Web-2	Server	10.0.0.6	Linux
+Web1	Server	10.0.0.5	Linux
+Web2	Server	10.0.0.6	Linux
+Web3  Server  10.0.0.9
 ELK-server	Server	10.2.0.4	Linux
 Access Policies
 The machines on the internal network are not exposed to the public Internet. Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
@@ -54,13 +56,13 @@ Jumpbox VM: IP 10.0.0.4 Local Workstation via SSH IP 40.87.27.108
 A summary of the access policies in place can be found in the table below.
 
 Name	Publicly Accessible	Allowed IP Addresses
-Jump Box	Yes	100.7.126.87
-Web-1	No	10.0.0.8
-Web-2	No	10.0.0.8
+Jump Box	Yes	40.87.27.108
+Web-1	No	10.0.0.5
+Web-2	No	10.0.0.6
+Web-3 No  10.0.0.9
 ELK-Server	No	10.1.0.4
 Elk Configuration
-Ansible  fghhjkkldwwgfgk
-confftion of the ELK machine. No configuration was performed manually, which is advantageous because the playbook, much like the ones for Filebeat and Metricbeat, saved time and remove [some] elements of human error.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the playbook, much like the ones for Filebeat and Metricbeat, saved time and remove [some] elements of human error.
 
 Link to Playbooks and Config Files
 
@@ -75,8 +77,9 @@ Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
 Name	Function	IP Address
-Web-1	Server	10.0.0.7
-Web-2	Server	10.0.0.6
+Web1	Server	10.0.0.7
+Web2	Server	10.0.0.6
+Web3  Server  10.0.0.9
 We have installed the two Beats on these machines These Beats allow us to collect the following information from each machine:
 
 Filebeat: can handle audit logs, deprecation logs, gc logs, server logs, and slow logs.
@@ -93,19 +96,19 @@ Using the Playbook
 There were four playbooks used when creating this network.
 
 Playbook	Action(s)
-my-playbook	This is the initial playbook to add a container to the Jump Box and install docker.io, pip3, Docker python
-ELK Playbook	This playbook increased the resources for the ELK server, add the container, and install docker.io, pip3, Docker python
+pentest	This is the initial playbook to add a container to the Jump Box and install docker.io, pip3, Docker python
+ELK-playbook	This playbook increased the resources for the ELK server, add the container, and install docker.io, pip3, Docker python
 filebeat-playbook	This playbook pulled the download, config file, and .yml for Filebeat
 metricbeat-playbook	This playbook pulled the download, config file, and .yml for Metricbeat
 Playbooks and Config Files
-Since my-playbook was the playbook created as part of the Cloud Security unit, it would need to be implemented first to have an Ansible control node configured. Assuming you have such a control node provisioned:
+Since pentest playbook was the playbook created as part of the Cloud Security unit, it would need to be implemented first to have an Ansible control node configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
 
 Copy the playbook file to /etc/ansible.
 Update the Ansible Host File to include the webservers and ELK server (and IP addresses).
 Run the playbook, and navigate to command line to check that the installation worked as expected.
-Playbook: ELK Playbook Location: /etc/ansible/ELK_playbook.yml
+Playbook: ELK Playbook Location: /etc/ansible/ELK-playbook.yml
 GitBash Steps to enable Kibana Dashboard
 
 URL to check if the ELK server is running
