@@ -1,0 +1,32 @@
+## Elk Commands and Steps
+
+This guide should help with step-by-step commands to SSH, start and attach containers, and ultimately navigate to the Kibana Dashboard for the ELK server.
+
+- GitBash
+
+  - `ssh redadmin@40.87.27.108`
+
+  - `sudo docker container list -a`
+
+  - `sudo docker container start tender_swartz`
+
+  - `sudo docker container attach tender_swartz`
+
+  - `cd /etc/ansible `
+
+  - `ls`
+
+    - ELK-Playbook.yml	ansible.cfg	filebeat-config.yml	hosts	metricbeat-config.yml	metricbeat-playbook.yml	pentest.yml
+
+  - `ssh sysadmin@10.2.0.4`
+
+  - `sudo docker container start elk`
+
+  - http://[DynamicIP]:5601/app/kibana#/home
+  The Dynamic IP referenced here will change every time your machine is restarted, so the exact URL path will also change based off of that current ELK instance public IP.
+  (My initial instance URL was http://13.83.51.111/app/kibana) 
+
+# Troubleshooting:
+  - Re-run playbooks
+  - Double check IP listed in URL
+  - Make sure it is http not https
