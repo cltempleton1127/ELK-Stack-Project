@@ -4,9 +4,16 @@ University of RIchmond Cybersecurity Bootcamp ELK stack Project
 ![Project1_ELK-Stack-Diagram (2)](https://user-images.githubusercontent.com/86531330/135138057-96071aa4-23d6-4e23-bf85-5014dcf51638.jpg)
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
+I created an ELK stack that allows the automatation of monitoring the performance of multiple virtual machines in one database. By using the ELK Server in conjunction with containers, the benefits are:
 
-  - _TODO: Enter the playbook file._
+Scalability and Elasticity
+Efficiency of Resources
+Ideal for Team Distribution and Collaboration Efforts
+Increased Security
+App Isolation
+More information about [Cloud Domain, Containers, and the Security Benefits](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Interview%20Question%20about%20Containers.md)
+
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above, or select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
 - Description of the Topology
@@ -15,101 +22,114 @@ This document contains the following details:
   - Beats in Use
   - Machines Being Monitored
 - How to Use the Ansible Build
-
+- Bonus - Commands Used
 
 ### Description of the Topology
-
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly efficient, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
-**Load balancers help protect from DDoS attacks.  The advantage of the Jump Box is it provides an added layer of security by acting as the gateway to the webseervers.
+The Jump Box is a tool used to connect to devices within a security zone. Because it was set up with SSH Keys instead of passwords, it protects the machines from DDoS attacks.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-**Filebeat watches for pre-specified log data 
-- _TODO: What does Metricbeat record?_
-**Metricbeat records system metrics such as CPU usage and Uptime
+Integrating an ELK server allows users to easily monitor the webservers for changes to the logs and system metrics and statistics.
+
+Filebeat collects data about the file system. Metricbeat collects machine metrics, such as uptime.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function  | IP Address | Operating System |
-|----------|---------- |------------|------------------|
-| Jump Box | Gateway   | 10.0.0.4   | Linux            |
-| Web1     | Web VM    | 10.0.0.5   | Linux            |
-| Web2     | Web VM    | 10.0.0.6   | Linux            |
-| Web3     | Web VM    | 10.0.0.9   | Linux            |
-| ELK      | ELK Stack | 10.1.0.4   | Linux            |
+The configuration details of each machine may be found below.
+
+| Name     | Function | IP Address | Operating System |
+|----------|----------|------------|------------------|
+| Jump Box | Gateway  | 10.0.0.4   | Linux            |
+| Web1    | Server   | 10.0.0.5   | Linux            |
+| Web2    | Server   | 10.0.0.6   | Linux            |
+|Web3      | Server   | 10.0.0.9   | Linux            |
+|ELK-server| Server   | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
-The machines on the internal network are not exposed to the public Internet. 
+The machines on the internal network are not exposed to the public Internet. Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-Only the **Red Team Jumpbox Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
-**10.0.0.4
-**72.84.246.10
+My home IP address (72.84.246.10)
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
-**My PC: 72.84.246.10
+Machines within the network can only be accessed by Local workstation via the Jumpbox.
 
-A summary of the access policies in place can be found in the table below.
+The Jumpbox VM was allowed access to the ELK VM. Jumpbox VM: IP 10.0.0.4 Local Workstation via SSH IP 72.84.246.10. A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+|   Name   | Publicly Accessible | Allowed IP Addresses  |
+|----------|---------------------|-----------------------|
+| Jump Box |        Yes           |      72.84.246.10     |
+|   Web1  |        No           |10.0.0.4|
+|   Web2  |        No           |10.0.0.4|
+|   Web3  |        No           |10.0.0.4|
+|ELK-Server|        No           |10.0.0.4|
+
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the playbook, much like the ones for Filebeat and Metricbeat, saved time and remove [some] elements of human error.  
 
-The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+[Link to Playbooks and Config Files](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible)
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+|ELK_Playbook tasks    |
+|----------|
+| Install: docker.io |
+| Install: Python-pip  |
+| Install: docker |
+|Launch docker container: elk|
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+This [screenshot](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/docker%20elk%20sebp_elk_761.PNG) displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ### Target Machines & Beats
+
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
-__10.0.0.5 Web1
-__10.0.0.6 Web2
-__10.0.0.9 Web3
 
-We have installed the following Beats on these machines: 
-..* **Filebeat
-..* **Metricbeat
+| Name     | Function | IP Address |
+|----------|----------|------------|
+| Web1    | Server   | 10.0.0.5   |
+| Web2    | Server   | 10.0.0.6   |
+| Web3    | Server   | 10.0.0.9   |
 
-These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+We have installed the two Beats on these machines.  These Beats allow us to collect the following information from each machine:
 
-**Filebeat can be described as a lightweight shipper for forwarding and centralizing log data. It helps you keep the simple things simple by offering a lightweight way to forward and centralize logs and files. On the other hand, Metricbeat is detailed as a Lightweight Shipper for Metrics. Metricbeat collects metrics from your systems and services. From CPU to memory, essentially, it is a lightweight way to send system and service statistics like CPU usage and memory.  Filebeat and Metricbeat are primarily classified as "Log Management" and "Monitoring" tools respectively.**
+- **Filebeat**: can handle audit logs, deprecation logs, gc logs, server logs, and slow logs. 
 
-**Examples of data collected from Filebeat would be log events that you specify, such as audit logs, deprecation logs, GC logs ("Garbage Collection" logs- a highly important tool for revealing potential improvements), server logs, and slow logs.**
+- **Metricbeat**: collects machine metrics. For example, Metricbeat can be used to monitor and analyze system CPU, memory and load.
 
-**Examples of data collected from Metricbeat would be CPU usage, Uptime, or data related to services running on the server. It can also be used to monitor other beats and ELK stack itself.**
-
+The Kibana dashboard provides lots of system information, including: heatmap, sankey chart, response codes, unique visitors, total requests, etc. 
+These data points are helpful for things like a [Kibana Exploration Activity](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Additional%20Resources/Kibana%20Exploration.docx)
 
 ### Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+
+There were four playbooks used when creating this network.  
+
+| Playbook     | Action(s) |
+|----------|----------|
+| [pentest](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/pentest.yml) | This is the initial playbook to add a container to the Jump Box and install docker.io, pip3, Docker python | 
+| [ELK Playbook](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/ELK-playbook.yml) | This playbook increased the resources for the ELK server, add the container, and install docker.io, pip3, Docker python  | 
+| [filebeat-playbook](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/filebeat-playbook.yml) | This playbook pulled the download, config file, and .yml for Filebeat | 
+| [metricbeat-playbook](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/metricbeat-playbook.yml) | This playbook pulled the download, config file, and .yml for Metricbeat  | 
+
+  - [Playbooks and Config Files](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible)
+  
+Since [pentest](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/pentest.yml) was the playbook created as part of the Cloud Security unit, it would need to be implemented first to have an Ansible control node configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Copy the playbook file to /etc/ansible.
+- Update the [Ansible Host File](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/hosts.txtt) to include the webservers and ELK server (and IP addresses).
+- Run the playbook, and navigate to command line to check that the installation worked as expected.
+- Playbook: [ELK-Playbook](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/ELK-playbook.yml) Location: /etc/ansible/ELK_playbook.yml
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
+[GitBash Steps to enable Kibana Dashboard](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/GitBash%20Steps.md)
+
+[URL to check if the ELK server is running](http://13.83.81.121:5601/app/kibana)
+
+## Bonus
+[Link to Bonus: Commands](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/Bonus.md)
+Group
+Courtney Templeton
+Josh Black
+Laura Pratt
