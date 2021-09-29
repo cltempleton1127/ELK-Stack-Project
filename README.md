@@ -47,7 +47,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the **Red Team Jumpbox Provisioner** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the **Red Team Jumpbox Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
 **10.0.0.4
 **72.84.246.10
