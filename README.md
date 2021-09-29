@@ -106,7 +106,7 @@ There were four playbooks used when creating this network.
 | Playbook     | Action(s) |
 |----------|----------|
 | [pentest](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/pentest.yml) | This is the initial playbook to add a container to the Jump Box and install docker.io, pip3, Docker python | 
-| [ELK Playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/ELK_Playbook.txt) | This playbook increased the resources for the ELK server, add the container, and install docker.io, pip3, Docker python  | 
+| [ELK Playbook](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/ELK-playbook.yml) | This playbook increased the resources for the ELK server, add the container, and install docker.io, pip3, Docker python  | 
 | [filebeat-playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/filebeat-playbook.txt) | This playbook pulled the download, config file, and .yml for Filebeat | 
 | [metricbeat-playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/metricbeat-playbook.txt) | This playbook pulled the download, config file, and .yml for Metricbeat  | 
 
