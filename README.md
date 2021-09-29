@@ -69,7 +69,7 @@ The Jumpbox VM was allowed access to the ELK VM. Jumpbox VM: IP 10.0.0.4 Local W
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the playbook, much like the ones for Filebeat and Metricbeat, saved time and remove [some] elements of human error.  
 
-[Link to Playbooks and Config Files](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/tree/main/Ansible)
+[Link to Playbooks and Config Files](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible)
 
 |ELK_Playbook tasks    |
 |----------|
@@ -105,7 +105,7 @@ There were four playbooks used when creating this network.
 
 | Playbook     | Action(s) |
 |----------|----------|
-| [pentest]() | This is the initial playbook to add a container to the Jump Box and install docker.io, pip3, Docker python | 
+| [pentest](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/pentest.yml) | This is the initial playbook to add a container to the Jump Box and install docker.io, pip3, Docker python | 
 | [ELK Playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/ELK_Playbook.txt) | This playbook increased the resources for the ELK server, add the container, and install docker.io, pip3, Docker python  | 
 | [filebeat-playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/filebeat-playbook.txt) | This playbook pulled the download, config file, and .yml for Filebeat | 
 | [metricbeat-playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/metricbeat-playbook.txt) | This playbook pulled the download, config file, and .yml for Metricbeat  | 
