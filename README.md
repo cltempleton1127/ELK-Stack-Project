@@ -37,12 +37,13 @@ Filebeat collects data about the file system. Metricbeat collects machine metric
 
 The configuration details of each machine may be found below.
 
-Name	Function	IP Address	Operating System
-Jump Box	Gateway	10.0.0.4	Linux
-Web1	Server	10.0.0.5	Linux
-Web2	Server	10.0.0.6	Linux
-Web3  Server  10.0.0.9
-ELK-server	Server	10.2.0.4	Linux
+| Name | Function |	IP Address | Operating System |
+| Jump Box |	Gateway	| 10.0.0.4 |Linux |
+| Web1	 |Server	|10.0.0.5|	Linux|
+|Web2|	Server	|10.0.0.6	|Linux|
+|Web3 | Server |  10.0.0.9 | Linux |
+| ELK-server|	Server	|10.2.0.4	| Linux|
+
 Access Policies
 The machines on the internal network are not exposed to the public Internet. Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
