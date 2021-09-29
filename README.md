@@ -11,7 +11,7 @@ Efficiency of Resources
 Ideal for Team Distribution and Collaboration Efforts
 Increased Security
 App Isolation
-More information about Cloud Domain, Containers, and the Security Benefits.
+More information about [Cloud Domain, Containers, and the Security Benefits(https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Interview_Question.md]
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above, or select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
