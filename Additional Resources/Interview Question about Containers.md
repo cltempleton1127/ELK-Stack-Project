@@ -1,10 +1,10 @@
-# H1 Activity File: Interview Questions
-# H2 Domain: Cloud Security
+## Activity File: Interview Questions
+### Domain: Cloud Security
 
-# H3 Question 3: Containers
+### Question 3: Containers
 When is it appropriate to use containers in cloud deployments, and what are the security benefits of doing so?
 
-# H4 Restate the problem:
+### Restate the problem:
 
 It is a good idea to use containers when you are working on a larger or more complex project.  For example, when you are trying to reduce the load of responsibility and resources on a machine, assigning each docker a specific task or application can solve this problem. Containers work by isolating the software from its environment and ensure standardization by separating application dependencies from infrastructure.  Containers are designed to do one thing very well, and allow elasticity and scalability.  “Rules” (or playbooks) run on the containers to do these specific things.  Some benefits to this are that you are not paying for resources when they are not being used, and you can dynamically build resources as well.  Containers also offer speed of use, as they spin up faster than servers (seconds compared to minutes), all while adding layers of security and accessibility controls.  Docker containers are a good idea for use as version control on your application’s entire operating system.  They are also ideal for team distribution and collaboration efforts, or when your app needs to go through multiple phases of development, for example.  
 Since applications run independently in separate containers, each will have their own level of security. This feature of app isolation helps share additional features without any risk factor. In line with the Principle of Least Privilege, access to containers can be provided to internal or external users without granting access to any more than is necessary.
