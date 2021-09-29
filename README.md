@@ -60,8 +60,9 @@ The Jumpbox VM was allowed access to the ELK VM. Jumpbox VM: IP 10.0.0.4 Local W
 |   Name   | Publicly Accessible | Allowed IP Addresses  |
 |----------|---------------------|-----------------------|
 | Jump Box |        Yes           |      40.87.27.108     |
-|   Web-1  |        No           |10.0.0.4|
-|   Web-2  |        No           |10.0.0.4|
+|   Web1  |        No           |10.0.0.4|
+|   Web2  |        No           |10.0.0.4|
+|   Web3  |        No           |10.0.0.4|
 |ELK-Server|        No           |10.0.0.4|
 
 
