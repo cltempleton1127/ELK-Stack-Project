@@ -98,7 +98,7 @@ We have installed the two Beats on these machines.  These Beats allow us to coll
 - **Metricbeat**: collects machine metrics. For example, Metricbeat can be used to monitor and analyze system CPU, memory and load.
 
 The Kibana dashboard provides lots of system information, including: heatmap, sankey chart, response codes, unique visitors, total requests, etc. 
-These data points are helpful for things like a [Kibana Exploration Activity](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Kibana%20Exploration.docx)
+These data points are helpful for things like a [Kibana Exploration Activity](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Kibana%20Exploration.docx.pdf)
 
 ### Using the Playbook
 
