@@ -6,11 +6,11 @@ University of RIchmond Cybersecurity Bootcamp ELK stack Project
 
 I created an ELK stack that allows the automatation of monitoring the performance of multiple virtual machines in one database. By using the ELK Server in conjunction with containers, the benefits are:
 
-Scalability and Elasticity
-Efficiency of Resources
-Ideal for Team Distribution and Collaboration Efforts
-Increased Security
-App Isolation
+- Scalability and Elasticity
+- Efficiency of Resources
+- Ideal for Team Distribution and Collaboration Efforts
+- Increased Security
+- App Isolation
 More information about [Cloud Domain, Containers, and the Security Benefits](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Interview%20Question%20about%20Containers.md)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above, or select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
@@ -98,7 +98,7 @@ We have installed the two Beats on these machines.  These Beats allow us to coll
 - **Metricbeat**: collects machine metrics. For example, Metricbeat can be used to monitor and analyze system CPU, memory and load.
 
 The Kibana dashboard provides lots of system information, including: heatmap, sankey chart, response codes, unique visitors, total requests, etc. 
-These data points are helpful for things like a [Kibana Exploration Activity](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Kibana%20Exploration.docx.pdf)
+These data points are helpful for collecting and revieweing output like you see here in this [Kibana Exploration Activity](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Kibana%20Exploration.docx.pdf)
 
 ### Using the Playbook
 
