@@ -127,7 +127,7 @@ SSH into the control node and follow the steps below:
 
 [PowerShell Steps to enable Kibana Dashboard](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/ELK%20Command%20and%20Steps.md)
 
-To check if the ELK-SERVER is running, the first instance of the Kibana URL in my project is **http[]()://13.83.51.111/app/kibana. [See Filebeats Success image](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/Filebeat_check_data_kibana_success.png) 
+To check if the ELK-SERVER is running, the first instance of the Kibana URL in my project is "http[]()://13.83.51.111/app/kibana": [Filebeats Success image](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/Filebeat_check_data_kibana_success.png) 
 
 This image shows success for Metricbeats data from all three VM's from the Kibana dashboard [Kibana Metricbeats](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Metricsbeat_kibana_success.png)
 
