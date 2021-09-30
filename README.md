@@ -127,11 +127,12 @@ SSH into the control node and follow the steps below:
 
 [PowerShell Steps to enable Kibana Dashboard](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/ELK%20Command%20and%20Steps.md)
 
-To check if the ELK-SERVER is running, the URL is: [http://13.83.51.111:5601/app/kibana](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Metricsbeat_kibana_success.png). 
+To check if the ELK-SERVER is running, the first instance of the Kibana URL in my project is http://13.83.51.111/app/kibana. [See Filebeats Success image] (http://13.83.51.111:5601/app/kibana](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/Filebeat_check_data_kibana_success.png) 
 
-If you shut your machines down, and need to run this after restarting your ELK-SERVER VM, it would just need to be run with "http://DYNAMICIP:5601/app/kibana". The DYNAMIC IP will be your ELK-SERVER public IP address. This will only need to be done if you have a dynamic IP as it changes every time you shut down and restart your machine. 
+This image shows success for Metricbeats data from all three VM's from the Kibana dashboard [Kibana Metricbeats](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Metricsbeat_kibana_success.png)
+
+NOTE: If you shut your machines down, and need to run this after restarting your ELK-SERVER VM, it would just need to be run with "http://DYNAMICIP:5601/app/kibana". The DYNAMIC IP will be your ELK-SERVER public IP address. This will only need to be done if you have a dynamic IP as it changes every time you shut down and restart your machine. 
   
-[Kibana Dashboad Success](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/Metricsbeat_kibana_success.png)
 
 ## Bonus
 [Link to Bonus: Commands](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/Bonus.md)
