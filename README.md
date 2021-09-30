@@ -120,7 +120,7 @@ Since [pentest](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/A
 SSH into the control node and follow the steps below:
 
 - Copy the playbook file to /etc/ansible.
-- Update the [Ansible Host File](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/hosts.txtt) to include the webservers and ELK server (and IP addresses).
+- Update the [Ansible Host File](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/hosts.txt) to include the webservers and ELK server (and IP addresses).
 - Run the playbook, and navigate to command line to check that the installation worked as expected.
 - Playbook: [ELK-Playbook](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/ELK-playbook.yml) Location: /etc/ansible/ELK_playbook.yml
 
