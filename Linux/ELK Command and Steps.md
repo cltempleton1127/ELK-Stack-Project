@@ -22,7 +22,7 @@ This guide should help with step-by-step commands to SSH, start and attach conta
 
   - `sudo docker container start elk`
 
-  - http://13.83.81.111:5601/app/kibana#/home
+  - http://13.83.81.111:5601/app/kibana#/home (
 
 # Troubleshooting:
   - Re-run playbooks
