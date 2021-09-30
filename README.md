@@ -54,9 +54,10 @@ The machines on the internal network are not exposed to the public Internet. Onl
 
 My home IP address (72.84.246.10)
 
-Machines within the network can only be accessed by Local workstation via the Jumpbox.
+Machines within the network can only be accessed by "My PC" via the Jumpbox. ![See Diagram](https://user-images.githubusercontent.com/86531330/135138057-96071aa4-23d6-4e23-bf85-5014dcf51638.jpg)
 
-The Jumpbox VM was allowed access to the ELK VM. Jumpbox VM: IP 10.0.0.4 Local Workstation via SSH IP 72.84.246.10. A summary of the access policies in place can be found in the table below.
+The Jumpbox VM was allowed access to the ELK VM. Jumpbox VM: IP 10.0.0.4   My PC: via SSH IP 72.84.246.10. 
+A summary of the access policies in place can be found in the table below.
 
 |   Name   | Publicly Accessible | Allowed IP Addresses  |
 |----------|---------------------|-----------------------|
