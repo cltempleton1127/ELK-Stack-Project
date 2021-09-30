@@ -12,9 +12,9 @@ I created an ELK stack that allows the automatation of monitoring the performanc
 - Increased Security
 - App Isolation
 
-More information about [Cloud Domain, Containers, and the Security Benefits](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Interview%20Question%20about%20Containers.md)
+More information about Containers and their benefits can be found here: [Question and Anwser Interview: Cloud Domain, Containers, and the Security Benefits](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Interview%20Question%20about%20Containers.md)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above, or select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
+The files in this project have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above, or select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
 - Description of the Topology
