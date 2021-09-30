@@ -123,7 +123,7 @@ SSH into the control node and follow the steps below:
 - Playbook: [ELK-Playbook](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Ansible/ELK-playbook.yml) Location: /etc/ansible/ELK_playbook.yml
 
 
-[GitBash Steps to enable Kibana Dashboard](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/GitBash%20Steps.md)
+[PowerShell Steps to enable Kibana Dashboard](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/ELK%20Command%20and%20Steps.md)
 
 [URL to check if the ELK server is running](http://13.83.81.121:5601/app/kibana)
 
