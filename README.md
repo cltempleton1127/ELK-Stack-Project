@@ -129,7 +129,7 @@ SSH into the control node and follow the steps below:
 
 To check if the ELK-SERVER is running, the first instance of the Kibana URL in my project is "http[]()://13.83.51.111/app/kibana": [Filebeats Success image](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/Filebeat_check_data_kibana_success.png) 
 
-This image shows success for Metricbeats data from all three VM's from the Kibana dashboard [Kibana Metricbeats](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Metricsbeat_kibana_success.png)
+This image shows success for Metricbeats data from all three VM's from the Kibana dashboard: [Kibana Metricbeats](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Metricsbeat_kibana_success.png)
 
 NOTE: If you shut your machines down, and need to run this after restarting your ELK-SERVER VM, it would just need to be run with "http://DYNAMICIP:5601/app/kibana". The DYNAMIC IP will be your ELK-SERVER public IP address. This will only need to be done if you have a dynamic IP as it changes every time you shut down and restart your machine. 
   
