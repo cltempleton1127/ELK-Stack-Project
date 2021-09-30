@@ -27,7 +27,7 @@ This document contains the following details:
 ### Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly efficient, in addition to restricting access to the network.
+Load balancing ensures that the application will be highly efficient, increase availability, in addition to restricting access to the network.
 
 The Jump Box is a tool used to connect to devices within a security zone. Because it was set up with SSH Keys instead of passwords, it protects the machines from DDoS attacks.
 
