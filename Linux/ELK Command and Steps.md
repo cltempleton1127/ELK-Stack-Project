@@ -22,7 +22,7 @@ This guide should help with step-by-step commands to SSH, start and attach conta
 
   - `sudo docker container start elk`
 
-  - http://13.83.51.111:5601/app/kibana#/home (https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/Metricsbeat_kibana_success.png)
+  - Kibana Dashboard Live Screenshot ![http://13.83.51.111:5601/app/kibana#/home] (https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/Metricsbeat_kibana_success.png)
 
 # Troubleshooting:
   - Re-run playbooks
