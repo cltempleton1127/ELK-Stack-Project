@@ -54,7 +54,7 @@ The machines on the internal network are not exposed to the public Internet. Onl
 
 My home IP address (72.84.246.10)
 
-Machines within the network can only be accessed by "My PC" via the Jumpbox. ![See Diagram](https://user-images.githubusercontent.com/86531330/135138057-96071aa4-23d6-4e23-bf85-5014dcf51638.jpg)
+Machines within the network can only be accessed by "My PC" via the Jumpbox. [See Diagram](https://user-images.githubusercontent.com/86531330/135138057-96071aa4-23d6-4e23-bf85-5014dcf51638.jpg)
 
 The Jumpbox VM was allowed access to the ELK VM. Jumpbox VM: IP 10.0.0.4   My PC: via SSH IP 72.84.246.10. 
 A summary of the access policies in place can be found in the table below.
@@ -127,7 +127,7 @@ SSH into the control node and follow the steps below:
 
 [PowerShell Steps to enable Kibana Dashboard](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Linux/ELK%20Command%20and%20Steps.md)
 
-To check if the ELK-SERVER is running, the URL is: http://13.83.51.111:5601/app/kibana. 
+To check if the ELK-SERVER is running, the URL is: [http://13.83.51.111:5601/app/kibana](https://github.com/cltempleton1127/ELK-Stack-Project/blob/main/Additional%20Resources/Metricsbeat_kibana_success.png). 
 
 If you shut your machines down, and need to run this after restarting your ELK-SERVER VM, it would just need to be run with "http://DYNAMICIP:5601/app/kibana". The DYNAMIC IP will be your ELK-SERVER public IP address. This will only need to be done if you have a dynamic IP as it changes every time you shut down and restart your machine. 
   
